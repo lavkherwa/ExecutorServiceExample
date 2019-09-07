@@ -9,10 +9,7 @@ public class LifeCycle {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		/*
-		 * Cache Thread Pool will automatically create a new thread if required and kill
-		 * any thread which is ideal for more than 60 seconds
-		 */
+		
 		ExecutorService service = Executors.newFixedThreadPool(10);
 
 		for (int i = 0; i < 1000000; i++) {
